@@ -1,6 +1,8 @@
+var $j = jQuery.noConflict();
+
 let globalVolume = 0;
 let isVolumeOn = false;
-$("a").on('mouseover', function(e) {
+$j("a").on('mouseover', function(e) {
   if (!isVolumeOn) {
     return false;
   }
@@ -9,23 +11,23 @@ $("a").on('mouseover', function(e) {
   x.play();
 });
 
-$(document).ready(function() {
-  $('#music_btn').on('click', function() {
+$j(document).ready(function() {
+  $j('#music_btn').on('click', function() {
     isVolumeOn = !isVolumeOn;
     if(isVolumeOn) {
       globalVolume = 0.05;
-      $(this).html('On');
+      $j(this).html('On');
     } else {
       globalVolume = 0;
-      $(this).html('Off');
+      $j(this).html('Off');
     }
   });
   setTimeout(function () {
-    $('header').trigger('click');
+    $j('header').trigger('click');
   }, 500)
    
-    $('.loading-overlay').show();
-    setTimeout(function() {$('.loading-overlay').hide()}, 5000);
+    $j('.loading-overlay').show();
+    setTimeout(function() {$j('.loading-overlay').hide()}, 5000);
 
     var str_section = window.location.href;
     var section_id = str_section.substring(str_section.indexOf('#') + 1, str_section.length);
@@ -38,33 +40,33 @@ $(document).ready(function() {
 // FAQ start
 var MODULE = MODULE || {};
 
-(function($, MODULE) {
+(function($j, MODULE) {
   MODULE.init_accordion = function() {
     // Logic for accordion
     var accordion = (function() {
-      var $accordion_elem = $(".c-accordion"),
-        $accordion_headerlink = $accordion_elem.find(
+      var $jaccordion_elem = $j(".c-accordion"),
+        $jaccordion_headerlink = $jaccordion_elem.find(
           ".js-accordion__entry-header-link"
         ),
-        $accordion_item = $accordion_elem.find(".c-accordion__entry");
+        $jaccordion_item = $jaccordion_elem.find(".c-accordion__entry");
 
       var settings = {
-        speed: parseInt($accordion_elem.attr("data-speed")) || 400,
-        individual_openable: $accordion_elem.attr("data-individual-openable") === "true"
+        speed: parseInt($jaccordion_elem.attr("data-speed")) || 400,
+        individual_openable: $jaccordion_elem.attr("data-individual-openable") === "true"
       };
 
       return {
         init: function() {
-          $accordion_headerlink.on("click", function(e) {
+          $jaccordion_headerlink.on("click", function(e) {
             e.preventDefault();
-            accordion.toggle($(this));
+            accordion.toggle($j(this));
           });
 
           if (
             !settings.individual_openable &&
-            $(".c-accordion__entry.is-expanded").length > 1
+            $j(".c-accordion__entry.is-expanded").length > 1
           ) {
-            $(".c-accordion__entry.is-expanded").removeClass(
+            $j(".c-accordion__entry.is-expanded").removeClass(
               "is-expanded"
             );
           }
@@ -116,7 +118,7 @@ var MODULE = MODULE || {};
   /* READY FUNCTION
   ====================== */
 
-  $(function() {
+  $j(function() {
     MODULE.init_accordion();
   });
 })(jQuery, MODULE);
