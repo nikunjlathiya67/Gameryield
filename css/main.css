@@ -2107,6 +2107,9 @@ a {
 .faq-footer .header__logo__img{ 
     max-width: 395px;
 }
+.faq-footer .header__logo__img{ 
+    max-width: 305px;
+}
 .header__right .faq-btn {
     margin-left: 80px;
     margin-right: 35px;

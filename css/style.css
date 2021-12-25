@@ -357,6 +357,10 @@ h2{
     max-width: 1020px;
     margin-right: 31%;
 }
+.faq-page-top-sec .faq-footer{
+    max-width: 100%;
+    margin-right: 0;
+}
 .center-two-menu .dao-part:first-child{
     padding-left: 0px;
 }
@@ -409,6 +413,19 @@ h2{
     max-width: 1380px;
     margin-right: 25%;
 }
+.dapps-section-main::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #171d3d
+}
+.dapps-section-main::-webkit-scrollbar{
+	height: 12px;
+	background-color: rgba(255, 255, 255, 7%)
+}
+.dapps-section-main::-webkit-scrollbar-thumb{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #01F3FC;
+    height: 12px;
+}
 .dapps-text{
     text-align: center;
     margin-bottom: 6px;
@@ -416,6 +433,11 @@ h2{
 .dapps-section{
     display: flex;
     justify-content: space-around;
+    width: 2000px;
+}
+.dapps-section-main{
+    overflow-x: auto;
+    padding-bottom: 15px;
 }
 .traxpot, .niftywarefare{
     margin: 0 auto;
@@ -734,6 +756,7 @@ div#chartContainer {
     -o-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -moz-transition: all 0.3s;
+    font-size: 10px;
 }
 .governamne_boxes p:hover {
     color: #FF008F;
@@ -827,6 +850,9 @@ body .mobile-view-icon{
     display: inline-block;
 }
 @media screen and (min-width: 1200px) and (max-width: 1499px){
+    .governamne_boxes P{
+        font-size: 9px;
+    }
     .dapps-section .traxpot .traxpot-content{
         font-size: 12px;
     }
@@ -1056,7 +1082,7 @@ body .mobile-view-icon{
         font-size: 12px;
     }
     .niftywarefare{
-        margin-top: 35px;
+       margin-left: 30px;
     }
     .niftywarefare-content, .traxpot-content{
         line-height: 21px;
@@ -1087,7 +1113,7 @@ body .mobile-view-icon{
     .about-right h2,.border-effect{
         font-size: 30px;
     }
-    .two-part-sec,.dapps-section{
+    .two-part-sec{
         display: block;
     }
     .adobe-left,.about-right{
@@ -1111,10 +1137,19 @@ body .mobile-view-icon{
     .niftywarefare-content, .traxpot-content {
         margin: 0 0px;
     }
+    .governamne_boxes p{
+        font-size: 8px;
+    }
 }
 @media screen and (max-width: 767px) {
     body{
         background-image: none;
+    }
+    .dapps-section{
+        width: 1470px;
+    }
+    .niftywarefare {
+        margin-left: 20px;
     }
 }
 @media screen and (min-width: 650px) and (max-width: 1023px){
@@ -1496,7 +1531,7 @@ body .mobile-view-icon{
         height: 23px;
     }
     .faq-footer .header__logo__img{
-        max-width: 300px;
+        max-width: 230px;
     }
     .nav li:after{
         height: 56px;
@@ -1547,7 +1582,7 @@ body .mobile-view-icon{
         max-width: 1220px;
     }
     .faq-footer .header__logo__img{
-        max-width: 330px;
+        max-width: 260px;
     }
     .c-accordion__entry-contents{
         padding: 25px;
