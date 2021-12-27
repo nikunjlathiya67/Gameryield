@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="css/style.css" />
         <!-- jquery js -->
         <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
         <!-- scripts js -->
         <script src="js/scripts.min.js" async></script>
         <!-- myscript js -->
@@ -22,53 +23,56 @@
     </head>
     <body>
         <!-- header start -->
-        <header class="header hidden-xs">
+        <!-- <header class="header hidden-xs">
             <div class="container">
                 <div class="inner-header">
-                        <audio id="bg_music" muted>
-                            <source src="music/bg_music.mp3" type="audio/ogg">
-                        </audio>
-                        <a href="#" class="header__logo">
-                            <img src="img/logo.svg" alt="" class="header__logo__img">
-                         </a>
-                        <div class="header__right">
-                            <ul>
-                                <li>
-                                    <a href="#" target="_black"> 
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="31" viewBox="0 0 41 31">
-                                          <defs>
-                                            <clipPath id="clip-path">
-                                              <rect id="Rectangle_103" data-name="Rectangle 103" width="41" height="31" fill="#fff"/>
-                                            </clipPath>
-                                          </defs>
-                                          <g id="Discord-Logo-White" clip-path="url(#clip-path)">
-                                            <path id="Path_29" data-name="Path 29" d="M34.521,2.988A33.628,33.628,0,0,0,26.22.414a.126.126,0,0,0-.133.063A23.423,23.423,0,0,0,25.053,2.6a31.045,31.045,0,0,0-9.323,0A21.484,21.484,0,0,0,14.681.477a.131.131,0,0,0-.133-.063,33.534,33.534,0,0,0-8.3,2.574.119.119,0,0,0-.055.047A34.415,34.415,0,0,0,.169,26.245a.14.14,0,0,0,.053.1A33.816,33.816,0,0,0,10.4,31.488a.132.132,0,0,0,.143-.047,24.168,24.168,0,0,0,2.083-3.388.129.129,0,0,0-.071-.18,22.269,22.269,0,0,1-3.181-1.516.131.131,0,0,1-.013-.217c.214-.16.428-.327.632-.5a.126.126,0,0,1,.132-.018,24.116,24.116,0,0,0,20.494,0,.126.126,0,0,1,.133.016c.2.168.418.337.633.5a.131.131,0,0,1-.011.217A20.9,20.9,0,0,1,28.2,27.871a.13.13,0,0,0-.069.181,27.136,27.136,0,0,0,2.081,3.387.129.129,0,0,0,.143.049,33.7,33.7,0,0,0,10.2-5.147.131.131,0,0,0,.053-.094,34.19,34.19,0,0,0-6.029-23.21A.1.1,0,0,0,34.521,2.988ZM13.627,21.613A3.919,3.919,0,0,1,9.962,17.5a3.9,3.9,0,0,1,3.665-4.11,3.876,3.876,0,0,1,3.665,4.11A3.9,3.9,0,0,1,13.627,21.613Zm13.55,0a3.919,3.919,0,0,1-3.665-4.11,3.9,3.9,0,0,1,3.665-4.11,3.876,3.876,0,0,1,3.665,4.11A3.887,3.887,0,0,1,27.177,21.613Z" transform="translate(0.18 -0.47)" fill="#fff"/>
-                                          </g>
-                                        </svg>
-                                    </a>
-                                </li> 
-                                <li>
-                                   <a href="#" target="_black"> 
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="37.662" height="31.589" viewBox="0 0 37.662 31.589">
-                                            <path id="Union_2" data-name="Union 2" d="M28.712,31.158l-8.655-6.394L15.9,28.809a2.22,2.22,0,0,1-1.732.866l.589-8.828h0L30.814,6.354c.7-.626-.154-.93-1.09-.363L9.9,18.495,1.343,15.823c-1.849-.566-1.862-1.836.415-2.75L35.119.209c1.524-.692,2.994.366,2.413,2.7L31.851,29.68c-.268,1.284-.879,1.909-1.737,1.909A2.977,2.977,0,0,1,28.712,31.158Z" fill="#fff"/>
-                                        </svg>
-                                    </a>
-                                </li> 
-                                <li>
-                                    <a href="#" target="_black"> 
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="34.748" height="28.341" viewBox="0 0 34.748 28.341">
-                                          <path id="twitter_1_" data-name="twitter (1)" d="M35.748,3.006a17.216,17.216,0,0,1-4.959,2.417,7.076,7.076,0,0,0-12.414,4.738V11.74A16.837,16.837,0,0,1,4.159,4.585s-6.318,14.215,7.9,20.533A18.385,18.385,0,0,1,1,28.277c14.215,7.9,31.589,0,31.589-18.163A7.107,7.107,0,0,0,32.463,8.8a12.193,12.193,0,0,0,3.285-5.8Z" transform="translate(-1 -2.99)" fill="#fff"/>
-                                        </svg>
-                                    </a>
-                                </li> 
-                            </ul>
-                            <a href="faq.html" class="faq-btn btn"></span>FAQ</a>
-                            <a href="faq.html" class="connect-btn btn">CONNECT WALLET</a>
-                        </div>
+                    <audio id="bg_music" muted>
+                        <source src="music/bg_music.mp3" type="audio/ogg">
+                    </audio>
+                    <a href="#" class="header__logo">
+                        <img src="img/logo.svg" alt="" class="header__logo__img">
+                        </a>
+                    <div class="header__right">
+                        <ul>
+                            <li>
+                                <a href="#" target="_black"> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="31" viewBox="0 0 41 31">
+                                        <defs>
+                                        <clipPath id="clip-path">
+                                            <rect id="Rectangle_103" data-name="Rectangle 103" width="41" height="31" fill="#fff"/>
+                                        </clipPath>
+                                        </defs>
+                                        <g id="Discord-Logo-White" clip-path="url(#clip-path)">
+                                        <path id="Path_29" data-name="Path 29" d="M34.521,2.988A33.628,33.628,0,0,0,26.22.414a.126.126,0,0,0-.133.063A23.423,23.423,0,0,0,25.053,2.6a31.045,31.045,0,0,0-9.323,0A21.484,21.484,0,0,0,14.681.477a.131.131,0,0,0-.133-.063,33.534,33.534,0,0,0-8.3,2.574.119.119,0,0,0-.055.047A34.415,34.415,0,0,0,.169,26.245a.14.14,0,0,0,.053.1A33.816,33.816,0,0,0,10.4,31.488a.132.132,0,0,0,.143-.047,24.168,24.168,0,0,0,2.083-3.388.129.129,0,0,0-.071-.18,22.269,22.269,0,0,1-3.181-1.516.131.131,0,0,1-.013-.217c.214-.16.428-.327.632-.5a.126.126,0,0,1,.132-.018,24.116,24.116,0,0,0,20.494,0,.126.126,0,0,1,.133.016c.2.168.418.337.633.5a.131.131,0,0,1-.011.217A20.9,20.9,0,0,1,28.2,27.871a.13.13,0,0,0-.069.181,27.136,27.136,0,0,0,2.081,3.387.129.129,0,0,0,.143.049,33.7,33.7,0,0,0,10.2-5.147.131.131,0,0,0,.053-.094,34.19,34.19,0,0,0-6.029-23.21A.1.1,0,0,0,34.521,2.988ZM13.627,21.613A3.919,3.919,0,0,1,9.962,17.5a3.9,3.9,0,0,1,3.665-4.11,3.876,3.876,0,0,1,3.665,4.11A3.9,3.9,0,0,1,13.627,21.613Zm13.55,0a3.919,3.919,0,0,1-3.665-4.11,3.9,3.9,0,0,1,3.665-4.11,3.876,3.876,0,0,1,3.665,4.11A3.887,3.887,0,0,1,27.177,21.613Z" transform="translate(0.18 -0.47)" fill="#fff"/>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li> 
+                            <li>
+                                <a href="#" target="_black"> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="37.662" height="31.589" viewBox="0 0 37.662 31.589">
+                                        <path id="Union_2" data-name="Union 2" d="M28.712,31.158l-8.655-6.394L15.9,28.809a2.22,2.22,0,0,1-1.732.866l.589-8.828h0L30.814,6.354c.7-.626-.154-.93-1.09-.363L9.9,18.495,1.343,15.823c-1.849-.566-1.862-1.836.415-2.75L35.119.209c1.524-.692,2.994.366,2.413,2.7L31.851,29.68c-.268,1.284-.879,1.909-1.737,1.909A2.977,2.977,0,0,1,28.712,31.158Z" fill="#fff"/>
+                                    </svg>
+                                </a>
+                            </li> 
+                            <li>
+                                <a href="#" target="_black"> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34.748" height="28.341" viewBox="0 0 34.748 28.341">
+                                        <path id="twitter_1_" data-name="twitter (1)" d="M35.748,3.006a17.216,17.216,0,0,1-4.959,2.417,7.076,7.076,0,0,0-12.414,4.738V11.74A16.837,16.837,0,0,1,4.159,4.585s-6.318,14.215,7.9,20.533A18.385,18.385,0,0,1,1,28.277c14.215,7.9,31.589,0,31.589-18.163A7.107,7.107,0,0,0,32.463,8.8a12.193,12.193,0,0,0,3.285-5.8Z" transform="translate(-1 -2.99)" fill="#fff"/>
+                                    </svg>
+                                </a>
+                            </li> 
+                        </ul>
+                        <a href="faq.html" class="faq-btn btn">FAQ</a>
+                        <a href="faq.html" class="connect-btn btn">CONNECT WALLET</a>
+                    </div>
                 </div>
             </div>
-        </header>
+        </header> -->
         <!-- header end -->
+        <div id="header">
+            
+        </div>
          <main>
             <!-- <embed src="music/AgeOfTechnology.mp3" autostart="true" loop="true" width="0px" height="0px" id="background_music"> -->
             <button class="header__bars menu-btn hidden-lg hidden-md" type="button">
@@ -156,7 +160,6 @@
                 <!-- About End-->
                 <!-- DAPPS Start-->
                 <section class="section s_2 head-home">
-                    
                     <div class="container dapps-top-section">
                         <div class="dapps-title">
                             <h2 class="dapps-text border-effect">DAPPS</h2>
@@ -670,6 +673,13 @@
             });
             chart.render();
             }
+        </script>
+        <script>
+             jQuery(document).ready(function(){
+                jQuery(function(){
+                    jQuery("#header").load("header.html");
+                });
+            });
         </script>
         <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
     </body>

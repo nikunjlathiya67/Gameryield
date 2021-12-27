@@ -343,41 +343,5 @@
             </div>
         </footer>
         <!-- footer end -->
-        <!-- chart -->
-        <script type="text/javascript">
-            window.onload = function () {
-            var chart = new CanvasJS.Chart("chartContainer", {
-                animationEnabled: true,
-                animationDuration: 2000,
-                backgroundColor: "transparent",
-                legend: {
-                    fontFamily: "Cairo sans-serif"
-                },
-                height:360,
-                data: [{
-                    type: "doughnut",
-                    startAngle: 60,
-                    innerRadius: 50,
-                    indexLabelFontSize: 16,
-                    borderThickness: 2,
-                    indexLabelFontColor: "#fff",
-                    indexLabel: "{label}",
-                    toolTipContent: "<b>{label}:</b> {y} (#percent%)",
-                    dataPoints: [
-                        { y: 30, label: "Yield farming rewards",  name: "30", color: "#04CAFC" },
-                        { y: 5, label: "Early backer pool",color: "#02DFFB"},
-                        { y: 15, label: "Public sale",color: "#00F3FC"},
-                        { y: 20, label: "Vested team pool",color: "#123DFA"},
-                        { y: 18, label: "DAO treasury endowment", color: "#0F59FA",  exploded: true},
-                        { y: 2, label: "Early Dapp growth and team funding", color: "#1981F3"},
-                      { y: 3, label: "Influencer partners", color: "#0A88FB"},
-                      { y: 7, label: "Nft partnerships", color: "#07A6FB"}
-                    ]
-                }]
-            });
-            chart.render();
-            }
-        </script>
-        <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
     </body>
 </html>
