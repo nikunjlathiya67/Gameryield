@@ -302,6 +302,9 @@ h2{
 .nav ul.side-bar-menu{
     display: none;
 }
+.faq-page-top-sec .mobile-menu{
+    display: none;
+}
 .faq-section-main{
     max-width: 991px;
     width: 100%;
@@ -910,6 +913,9 @@ body .mobile-view-icon{
     }
 }
 @media screen and (max-width: 1023px) {
+    .faq-page-top-sec .mobile-menu{
+        display: block;
+    }
     .total-tokan p:nth-child(2) {
         font-size: 25px;
     }
