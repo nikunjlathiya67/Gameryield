@@ -628,6 +628,17 @@ a.canvasjs-chart-credit{
 }
 div#chartContainer {
     padding-top: 12px;
+    position: relative;
+}
+#chartContainer:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #070d2f;
+    width: 120px;
+    z-index: 999;
+    height: 20px;
 }
  /* DISTRIBUTION  end*/
  /* governamne-deatils start*/
@@ -1148,6 +1159,13 @@ body .mobile-view-icon{
     }
 }
 @media screen and (max-width: 767px) {
+    #chartContainer:before{
+        background: #07103b;
+        top: 10px;
+        left: 0px;
+        width: 64px;
+        height: 13px;
+    }
     body{
         background-image: none;
     }
