@@ -403,39 +403,50 @@
         <!-- footer end -->
         <!-- chart -->
         <script type="text/javascript">
-            window.onload = function () {
-            var chart = new CanvasJS.Chart("chartContainer", {
-                animationEnabled: true,
-                animationDuration: 2000,
-                backgroundColor: "transparent",     
-                legend: {
-                    fontFamily: "Cairo sans-serif"
+            var $jj = jQuery.noConflict();
+            $j( document ).ready(function() {
+                var chart = echarts.init(document.getElementById('main'), null, {
+                // use SVG renderer
+                renderer: 'svg'
+                });
+                option = {
+                textStyle: {
+                    color: '#fff'
                 },
-                height:300,
-                data: [{
-                    type: "doughnut",
-                    startAngle: 60,
-                    innerRadius: 50,
-                    indexLabelFontSize: 16,
-                    borderThickness: 2,
-                    indexLabelFontColor: "#fff",
-                    indexLabel: "{label}",
-                    toolTipContent: "<b>{label}:</b> {y} (#percent%)",
-                    dataPoints: [
-                        { y: 30, label: "Yield farming rewards",  name: "30", color: "#04CAFC" },
-                        { y: 5, label: "Early backer pool",color: "#02DFFB"},
-                        { y: 15, label: "Public sale",color: "#00F3FC"},
-                        { y: 20, label: "Vested team pool",color: "#123DFA"},
-                        { y: 18, label: "DAO treasury endowment", color: "#0F59FA",  exploded: true},
-                        { y: 2, label: "Early Dapp growth and team funding", color: "#1981F3"},
-                      { y: 3, label: "Influencer partners", color: "#0A88FB"},
-                      { y: 7, label: "Nft partnerships", color: "#07A6FB"}
-                    ]
-                }]
+                series: [
+                    {
+                    type: 'pie',
+                    radius: ['30%', '70%'],
+                    label: {
+                        color: '#fff',
+                    },
+                    color: [
+                        '#123DFA',
+                        '#0F59FA',
+                        '#1981F3',
+                        '#0A88FB',
+                        '#07A6FB',
+                        '#04CAFC',
+                        '#02DFFB',
+                        '#00F3FC'
+                    ],
+                    data:
+                        [
+                            { value: 20, name: 'Vested team pool' },
+                            { value: 18, name: 'BDAO treasury endowment' },
+                            { value: 2, name: 'Early Dapp growth and team funding' },
+                            { value: 3, name: 'Influencer partners' },
+                            { value: 7, name: 'Nft partnerships' },
+                            { value: 30, name: 'Yield farming rewards' },
+                            { value: 5, name: 'Early backer pool' },
+                            { value: 15, name: 'Public sale' },
+                        ]
+                    }
+                ]
+                };
+                chart.setOption(option);
             });
-            chart.render();
-            }
-        </script>
+         </script>
         <script>
              jQuery(document).ready(function(){
                 jQuery(function(){
