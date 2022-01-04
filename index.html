@@ -416,10 +416,7 @@
         <script type="text/javascript">
             var $j = jQuery.noConflict();
             $j( document ).ready(function() {
-                var chart = echarts.init(document.getElementById('main'), null, {
-                // use SVG renderer
-                renderer: 'svg'
-                });
+                var chart = echarts.init(document.getElementById('main'));
                 option = {
                 textStyle: {
                     color: '#fff'
@@ -457,7 +454,7 @@
                 };
                 chart.setOption(option);
             });
-         </script>
+        </script>
         
     </body>
 </html>
