@@ -124,4 +124,3 @@ var MODULE = MODULE || {};
 })(jQuery, MODULE);
 
 // FAQ ends
-var $ = jQuery.noConflict();
