@@ -402,6 +402,16 @@
         </footer>
         <!-- footer end -->
         <!-- chart -->
+        <script>
+            jQuery(document).ready(function(){
+               jQuery(function(){
+                   jQuery("#header").load("header.html");
+                   jQuery("#fixed-navbar").load("fixed-navbar.html");
+                   jQuery("#marquee").load("marquee.html");
+                   jQuery("#footer").load("footer.html");
+               });
+           });
+       </script>
         <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/95368/echarts.min-353-english.js"></script>
         <script type="text/javascript">
             var $j = jQuery.noConflict();
@@ -448,16 +458,6 @@
                 chart.setOption(option);
             });
          </script>
-        <script>
-             jQuery(document).ready(function(){
-                jQuery(function(){
-                    jQuery("#header").load("header.html");
-                    jQuery("#fixed-navbar").load("fixed-navbar.html");
-                    jQuery("#marquee").load("marquee.html");
-                    jQuery("#footer").load("footer.html");
-                });
-            });
-        </script>
         
     </body>
 </html>
