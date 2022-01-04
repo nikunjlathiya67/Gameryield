@@ -864,9 +864,6 @@ body .mobile-view-icon{
 .d-inline-block {
     display: inline-block;
 }
-.s_5 svg g path[stroke-linecap="butt"] {
-    stroke: #fff;
-}
 @media screen and (min-width: 1200px) and (max-width: 1499px){
     .governamne_boxes P{
         font-size: 9px;

@@ -15,7 +15,6 @@
         <link rel="stylesheet" href="css/style.css" />
         <!-- jquery js -->
         <script type="text/javascript" src="js/jquery.min.js"></script>
-   
         <!-- scripts js -->
         <script src="js/scripts.min.js" async></script>
         <!-- myscript js -->
@@ -187,7 +186,7 @@
                                        <h2 class="border-effect">DISTRIBUTION</h2>
                                        <div class="border-line"></div>
                                        <p>100,000,000 “GMRY” GAMERYIELD TOKENS ARE MINTED FOR THE DAO OPERATION TO CAUSE DEFLATIONARY PRESSURE DUE TO UTILITY AND SCARCITY IN AVAILABLE TOKENS. THE GAMERYIELD DAO HAS ALLOCATED 30% POOL OF THE GAMERYIELD GENESIS TOKENS (100,000,000 GMRY) TO REWARD GAMERYIELD DAO YIELD FARMERS FOR LIQUIDITY PROVISIONING. THE REST OF THE TOKENS ARE DIVIDED ONTO VESTED POOLS TO REWARD AND FACILITATE ALIGNMENT OF INTENT BETWEEN VARIOUS ACTORS IN THE DAO. THE POOLS DIVISIONS ARE AS FOLLOWS:</p>
-                                       <div id="main" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>
+                                       <div id="chartContainer" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>
                                        <div class="total-tokan">
                                            <p>TOTAL TOKENS</p>
                                            <p>100,000,000</p>
@@ -402,53 +401,51 @@
             </div>
         </footer>
         <!-- footer end -->
-      <!-- chart -->
-<!--       <script type="text/javascript">
-        var $jj = jQuery.noConflict();
-        $j( document ).ready(function() {
-            var chart = echarts.init(document.getElementById('main'), null, {
-            // use SVG renderer
-            renderer: 'svg'
-            });
-            option = {
-            textStyle: {
-                color: '#fff'
-            },
-            series: [
-                {
-                type: 'pie',
-                radius: ['30%', '70%'],
-                label: {
-                    color: '#fff',
+        <!-- chart -->
+        <script type="text/javascript">
+            window.onload = function () {
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                animationDuration: 2000,
+                backgroundColor: "transparent",     
+                legend: {
+                    fontFamily: "Cairo sans-serif"
                 },
-                color: [
-                    '#123DFA',
-                    '#0F59FA',
-                    '#1981F3',
-                    '#0A88FB',
-                    '#07A6FB',
-                    '#04CAFC',
-                    '#02DFFB',
-                    '#00F3FC'
-                ],
-                data:
-                    [
-                        { value: 20, name: 'Vested team pool' },
-                        { value: 18, name: 'BDAO treasury endowment' },
-                        { value: 2, name: 'Early Dapp growth and team funding' },
-                        { value: 3, name: 'Influencer partners' },
-                        { value: 7, name: 'Nft partnerships' },
-                        { value: 30, name: 'Yield farming rewards' },
-                        { value: 5, name: 'Early backer pool' },
-                        { value: 15, name: 'Public sale' },
+                height:300,
+                data: [{
+                    type: "doughnut",
+                    startAngle: 60,
+                    innerRadius: 50,
+                    indexLabelFontSize: 16,
+                    borderThickness: 2,
+                    indexLabelFontColor: "#fff",
+                    indexLabel: "{label}",
+                    toolTipContent: "<b>{label}:</b> {y} (#percent%)",
+                    dataPoints: [
+                        { y: 30, label: "Yield farming rewards",  name: "30", color: "#04CAFC" },
+                        { y: 5, label: "Early backer pool",color: "#02DFFB"},
+                        { y: 15, label: "Public sale",color: "#00F3FC"},
+                        { y: 20, label: "Vested team pool",color: "#123DFA"},
+                        { y: 18, label: "DAO treasury endowment", color: "#0F59FA",  exploded: true},
+                        { y: 2, label: "Early Dapp growth and team funding", color: "#1981F3"},
+                      { y: 3, label: "Influencer partners", color: "#0A88FB"},
+                      { y: 7, label: "Nft partnerships", color: "#07A6FB"}
                     ]
-                }
-            ]
-            };
-            chart.setOption(option);
-        });
-     </script> -->
-      <!-- ECHARTS JS -->
-    <!-- <script src="js/echarts.min.js"></script> -->
+                }]
+            });
+            chart.render();
+            }
+        </script>
+        <script>
+             jQuery(document).ready(function(){
+                jQuery(function(){
+                    jQuery("#header").load("header.html");
+                    jQuery("#fixed-navbar").load("fixed-navbar.html");
+                    jQuery("#marquee").load("marquee.html");
+                    jQuery("#footer").load("footer.html");
+                });
+            });
+        </script>
+        <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
     </body>
 </html>
