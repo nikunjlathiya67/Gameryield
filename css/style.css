@@ -42,6 +42,27 @@ h2{
 .community ul li svg:hover path{
     fill: #ff008f;
 }
+
+#chartContainer .p0_lineGroup path {
+    stroke: #fff;
+}
+
+#chartContainer .p0_labels-outer text {
+    fill: #fff !important;
+}
+
+#chartContainer .p0_labelGroup-inner text {
+    font-size: 16px !important;
+}
+
+#chartContainer .p0_labelGroup-inner.smaller text {
+    font-size: 8px !important;
+}
+
+#chartContainer .p0_arc path {
+    stroke: transparent !important;
+}
+
 .footer-corner {
     width: 5px;
     height: 25px;
