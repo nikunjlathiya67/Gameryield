@@ -1,4 +1,4 @@
-var $j = jQuery.noConflict();
+// var $j = jQuery.noConflict();
 
 let globalVolume = 0;
 let isVolumeOn = false;
